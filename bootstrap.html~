@@ -1,0 +1,73 @@
+<html>
+ <head>
+   <title>Bootstrap demo</title>
+   <!-- Css For Bootstrap-->
+   <link href="css/bootstrap.min.css" rel="stylesheet"/>
+   
+   <!-- JS For Bootstrap-->
+   <script src="jquery-3.1.1.min.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+   <style>
+     #main
+     {
+       height:100%;
+     }
+     #header
+     {
+       height:25%;
+     }
+     #header1
+     {
+       background-color:orange;
+       height:100%;
+     }
+     #header2
+     {
+       background-color:orange;
+       height:100%;
+     }
+     #nav
+     {
+       background-color:brown;
+       height:7%;
+     }
+     #content
+     {
+       height:53%;
+     }
+     #content1,#content3
+     {
+       height:100%;
+       background-color:gray;
+     }
+     #content2
+     {
+       height:100%;
+     }
+     #footer
+     {
+       background-color:orange;
+       height:15%;
+     }
+   </style>
+ </head>
+ <body>
+ <div id="main" class="container">
+    <div id="header" class="row">
+        <div id="header1" class="col-md-4"></div>
+        <div id="header2" class="col-md-8"></div>
+    </div>
+    <div id="nav" class="row">
+        <div class="col-md-12"></div>
+    </div>
+    <div id="content" class="row">
+        <div id="content1" class="col-md-4"></div>
+        <div id="content2" class="col-md-4"></div>
+        <div id="content3" class="col-md-4"></div>
+    </div>
+    <div id="footer" class="row">
+        <div class="col-md-12"></div>
+    </div>
+ </div>
+ </body>
+</html>

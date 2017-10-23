@@ -1,0 +1,642 @@
+<html>
+ <head>
+   <title>Bootstrap demo</title>
+   <!-- Css For Bootstrap-->
+   <link href="css/bootstrap.min.css" rel="stylesheet"/>
+
+   <!-- JS For Bootstrap-->
+   <script src="jquery-3.1.1.min.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+   <style>
+     #main
+     {
+       height:100%;
+     }
+     #header
+     {
+       height:5%;
+     }
+     #header1
+     {
+       background-color:lightgray ;
+       height:100%;
+     }
+
+     #nav
+     {
+       background-color:white;
+       height:20%;
+       padding: 10px;
+     }
+       #nav1
+     {
+       background-color:white;
+       /*height:90%;*/
+     }
+        #nav2
+     {
+       background-color:white;
+       height:40%;
+     }
+        #nav3
+     {
+       background-color:white;
+       height:40%;
+       float: right;
+     }
+
+     .image_hover:hover {
+
+    border-top: 5px solid red;
+
+     }
+       .image_hover2:hover {
+           border-top: 5px solid red;
+           }
+      
+     #content
+     {
+       height:90%;
+     }
+     #content1
+     {
+       height:100%;
+       background-color:white;
+     }
+       #content1a
+     {
+       /*height:60%;*/
+        width:60%;
+       background-color:white;
+     }
+       #content1b
+     {
+       height:40%; width:100%;
+       background-color:white;
+     }
+       
+       #content1bIN
+       {   margin: 100px 0px 0px 20px;
+           height:50%; width:100%;
+           background-color:white;
+       }
+
+     #content2
+     {
+       height:100%;
+     }
+      
+       
+
+.main{
+    margin-top: 50px;
+}
+.row{margin-left:0px;margin-right:0px;}
+.main-content {
+/*    background-color:#009edf;*/
+    border: 2px solid #009edf;
+    margin: 0 auto;
+    max-width: 300px;
+    padding: 5px 7px;
+    color: #ccc;
+    text-shadow: none;
+}
+.input-group{
+	margin: 5px 0px;
+}
+.input-group-addon {
+    color: #009edf ;
+    font-size: 10px;
+}
+.login-button{
+    margin: 0px auto;
+    max-width: 80px;
+}
+.form-header{
+    max-width: 300px;
+    margin: 0 auto;
+    background-color: #009edf;
+    color: #fff;
+    width: 300% ;
+    padding: 5px 0px;
+    border-top-right-radius:10px ;
+    border-top-left-radius:10px
+}
+.remember{
+    color: black;
+}
+
+
+
+
+ #wrap{
+background-image: -ms-linear-gradient(top, #FFFFFF 0%, #D3D8E8 100%);
+/* Mozilla Firefox */
+background-image: -moz-linear-gradient(top, #FFFFFF 0%, #D3D8E8 100%);
+/* Opera */
+background-image: -o-linear-gradient(top, #FFFFFF 0%, #D3D8E8 100%);
+/* Webkit (Safari/Chrome 10) */
+background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FFFFFF), color-stop(1, #D3D8E8));
+/* Webkit (Chrome 11+) */
+background-image: -webkit-linear-gradient(top, #FFFFFF 0%, #D3D8E8 100%);
+/* W3C Markup, IE10 Release Preview */
+background-image: linear-gradient(to bottom, #FFFFFF 0%, #D3D8E8 100%);
+background-repeat: no-repeat;
+background-attachment: fixed;
+}
+legend{
+	color:#141823;
+	font-size:20px;
+	font-weight:bold;
+}
+.signup-btn {
+  background: #79bc64;
+  background-image: -webkit-linear-gradient(top, #79bc64, #578843);
+  background-image: -moz-linear-gradient(top, #79bc64, #578843);
+  background-image: -ms-linear-gradient(top, #79bc64, #578843);
+  background-image: -o-linear-gradient(top, #79bc64, #578843);
+  background-image: linear-gradient(to bottom, #79bc64, #578843);
+  -webkit-border-radius: 4;
+  -moz-border-radius: 4;
+  border-radius: 4px;
+  text-shadow: 0px 1px 0px #898a88;
+  -webkit-box-shadow: 0px 0px 0px #a4e388;
+  -moz-box-shadow: 0px 0px 0px #a4e388;
+  box-shadow: 0px 0px 0px #a4e388;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 15px;
+  padding: 10px 20px 10px 20px;
+  border: solid #3b6e22  1px;
+  text-decoration: none;
+    width: 60%;
+   margin: 0px auto;
+
+}
+
+.signup-btn:hover {
+  background: #79bc64;
+  background-image: -webkit-linear-gradient(top, #79bc64, #5e7056);
+  background-image: -moz-linear-gradient(top, #79bc64, #5e7056);
+  background-image: -ms-linear-gradient(top, #79bc64, #5e7056);
+  background-image: -o-linear-gradient(top, #79bc64, #5e7056);
+  background-image: linear-gradient(to bottom, #79bc64, #5e7056);
+  text-decoration: none;
+}
+.navbar-default .navbar-brand{
+		color:#fff;
+		font-size:10px;
+		font-weight:bold;
+	}
+.form .form-control { margin-bottom: 5px; }
+@media (min-width:900px) {
+	#home{
+		margin-top:10px;
+	}
+	#home .slogan{
+		color: #0e385f;
+		line-height: 40px;
+		font-weight:bold;
+	}
+}
+#footer {
+background-color: lightgray;
+margin-top: 274px;
+min-height: 194px;
+}
+     .new-img{
+       margin-top:13px;
+     }
+
+
+
+     .content {
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%, -50%);
+       height: 160px;
+       overflow:hidden;
+
+       font-family: 'Lato', sans-serif;
+       font-size: 35px;
+       line-height: 40px;
+       color: black;
+
+       &__container {
+         font-weight: 600;
+         overflow: hidden;
+         height: 40px;
+         padding: 0 40px;
+
+         &:before {
+           content: '[';
+           left: 0;
+         }
+
+         &:after {
+           content: ']';
+           position: absolute;
+           right: 0;
+         }
+
+         &:after, &:before {
+           position: absolute;
+           top: 0;
+
+           color: #16a085;
+           font-size: 42px;
+           line-height: 40px;
+
+           -webkit-animation-name: opacity;
+           -webkit-animation-duration: 2s;
+           -webkit-animation-iteration-count: infinite;
+           animation-name: opacity;
+           animation-duration: 2s;
+           animation-iteration-count: infinite;
+         }
+
+         &__text {
+           display: inline;
+/*           float: left;*/
+           margin: 0;
+         }
+
+         &__list {
+           margin-top: 0;
+           padding-left: 110px;
+           text-align: left;
+           list-style: none;
+
+           -webkit-animation-name: change;
+           -webkit-animation-duration: 10s;
+           -webkit-animation-iteration-count: infinite;
+           animation-name: change;
+           animation-duration: 10s;
+           animation-iteration-count: infinite;
+
+           &__item {
+             line-height:40px;
+             margin:0;
+           }
+         }
+       }
+     }
+
+     @-webkit-keyframes opacity {
+       0%, 100% {opacity:0;}
+       50% {opacity:1;}
+     }
+
+     @-webkit-keyframes change {
+       0%, 12.66%, 100% {transform:translate3d(0,0,0);}
+       16.66%, 29.32% {transform:translate3d(0,-25%,0);}
+       33.32%,45.98% {transform:translate3d(0,-50%,0);}
+       49.98%,62.64% {transform:translate3d(0,-75%,0);}
+       66.64%,79.3% {transform:translate3d(0,-50%,0);}
+       83.3%,95.96% {transform:translate3d(0,-25%,0);}
+     }
+
+     @-o-keyframes opacity {
+       0%, 100% {opacity:0;}
+       50% {opacity:1;}
+     }
+
+     @-o-keyframes change {
+       0%, 12.66%, 100% {transform:translate3d(0,0,0);}
+       16.66%, 29.32% {transform:translate3d(0,-25%,0);}
+       33.32%,45.98% {transform:translate3d(0,-50%,0);}
+       49.98%,62.64% {transform:translate3d(0,-75%,0);}
+       66.64%,79.3% {transform:translate3d(0,-50%,0);}
+       83.3%,95.96% {transform:translate3d(0,-25%,0);}
+     }
+
+     @-moz-keyframes opacity {
+       0%, 100% {opacity:0;}
+       50% {opacity:1;}
+     }
+
+     @-moz-keyframes change {
+       0%, 12.66%, 100% {transform:translate3d(0,0,0);}
+       16.66%, 29.32% {transform:translate3d(0,-25%,0);}
+       33.32%,45.98% {transform:translate3d(0,-50%,0);}
+       49.98%,62.64% {transform:translate3d(0,-75%,0);}
+       66.64%,79.3% {transform:translate3d(0,-50%,0);}
+       83.3%,95.96% {transform:translate3d(0,-25%,0);}
+     }
+
+     @keyframes opacity {
+       0%, 100% {opacity:0;}
+       50% {opacity:1;}
+     }
+
+     @keyframes change {
+       0%, 12.66%, 100% {transform:translate3d(0,0,0);}
+       16.66%, 29.32% {transform:translate3d(0,-25%,0);}
+       33.32%,45.98% {transform:translate3d(0,-50%,0);}
+       49.98%,62.64% {transform:translate3d(0,-75%,0);}
+       66.64%,79.3% {transform:translate3d(0,-50%,0);}
+       83.3%,95.96% {transform:translate3d(0,-25%,0);}
+     }
+     .content__container__list {
+         margin-top: -4px;
+         padding-left: 316px;
+         text-align: left;
+         list-style: none;
+         -webkit-animation-name: change;
+         -webkit-animation-duration: 10s;
+         -webkit-animation-iteration-count: infinite;
+         animation-name: change;
+         animation-duration: 10s;
+         animation-iteration-count: infinite;
+     }
+     ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+.content__container__list__item {
+    line-height: 40px;
+    margin: 0;
+}
+.content__container {
+    font-weight: 600;
+    overflow: hidden;
+    height: 40px;
+    padding: 0 40px;
+}
+.content__container:after, .content__container:before {
+    position: absolute;
+    top: 0;
+    color: #16a085;
+    font-size: 42px;
+    line-height: 40px;
+    -webkit-animation-name: opacity;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    animation-name: opacity;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.content__container:before {
+    content: '';
+    left: 0;
+}
+.content__container:after, .content__container:before {
+    position: absolute;
+    top: 0;
+    color: #16a085;
+    font-size: 42px;
+    line-height: 40px;
+    -webkit-animation-name: opacity;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    animation-name: opacity;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.content__container:after {
+    content: '';
+    position: absolute;
+    right: 0;
+}
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+       /* Popup container - can be anything you want */
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+
+       
+
+   </style>
+ </head>
+                                   
+      <script>
+// When the user clicks on div, open the popup
+function myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+}
+</script>                             
+                                   
+
+ <body>
+ <div id="main" class="container">
+    <div id="header" class="row">
+        <div id="header1" class="col-md-12"></div>
+
+    </div>
+    <div id="nav" class="row">
+        <div id="nav1" class="col-md-2">
+          <img src=img/logo.png width="130px;" class="image_hover" />
+        </div>
+
+        <div id="nav2" class="col-md-6">
+            <img src=img/1.png width="14%" class="new-img image_hover"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <img src=img/2.png width="25%" class="new-img image_hover"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <img src=img/3.png width="12%" class="new-img image_hover"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <img src=img/4.png width="15%" class="new-img image_hover"/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+
+        <div id="nav3" class="col-md-4" >
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+            <img src=img/5.png width="18%" class="new-img image_hover2" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <img src=img/6.png width="20%" class="new-img image_hover2 " />&nbsp; &nbsp;
+        </div>
+      </div>
+
+
+    <div id="content" class="row">
+        <div id="content1" class="col-md-8">
+
+            <div id="content1a" class="col-md-8">
+            <iframe width="700" height="422" src="https://www.youtube.com/embed/ujDmoi_ZOQ4" frameborder="0" allowfullscreen></iframe></div>
+            
+             <div id="content1b" class="col-md-8">
+              <div class="content">
+              <div class="content__container">
+                <p class="content__container__text">  It's  Future of digital</p>
+
+                <ul class="content__container__list">
+                  <li class="content__container__list__item">Manufacturing</li>
+                  <li class="content__container__list__item"><p>Creating</p></li>
+                  <li class="content__container__list__item"><p>Making</p></li>
+                  <li class="content__container__list__item"><p>Innovating</p></li>
+                </ul>
+
+              </div>
+            </div>
+                
+                <div id="content1bIN" class="col-md-11">
+                <h4> Bring your idea to life by simply uploading a file, instantly submitting your order and recieving your parts within days.                     </h4> 
+                    <center><br>
+                    <h3>"Giveaway Offer!!!"</h3>
+
+                        <div class="popup" onclick="myFunction()"><h4><u>Click me to Know the offer!</u></h4>
+                    <span class="popuptext" id="myPopup">There is a launch offer we are planning.<br> First 500 signups get freebies.</span>
+                    </div>
+                        </center>
+                </div>
+            </div>
+        </div>
+
+        <div id="content2" class="col-md-4">
+            <!--now collapse -->
+
+        <div class="panel-group" id="accordion">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+            <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+            Make Now!</a>
+            </h4>
+            </div>
+
+<!--    login forn-->
+                <div id="collapse1" class="panel-collapse collapse in">
+                <div class="panel-body">
+
+                <section class="login-info">
+                <div class="row main">
+                <div class="form-header">
+                <h1 class="text-center ">login form </h1>
+                </div>
+                <div class="main-content">
+
+                    <div class="input-group ">
+                <span class="input-group-addon"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></span>
+                <input id="email" type="text" class="form-control" name="email" placeholder="Enter your Email">
+                    </div>
+                    <div class="input-group">
+                <span class="input-group-addon"><span class="glyphicon glyphicon-lock" aria-hidden="true"></span></span>
+                <input id="password" type="password" class="form-control" name="password" placeholder="Enter your Password">
+                    </div>
+
+                <div class="checkbox">
+                <label class="remember">
+                <input name="remember" type="checkbox" > Remember Me
+                </label>
+                </div>
+
+                <div class="form-group ">
+                <a href="#" type="button"  class="btn btn-primary btn-lg btn-block login-button">login</a>
+                </div>
+                </div>
+                </div>
+                </section>
+            </div>
+    </div>
+</div>
+<!--         sign up form-->
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                            Sign-Up to make</a>
+                    </h4>
+                </div>
+            <div id="collapse2" class="panel-collapse collapse">
+                <div class="panel-body">
+
+	           <div class="row">
+                   <div class="col-md-11">
+                       <form action="r" method="post" accept-charset="utf-8" class="form" role="form">   <legend>Register here
+                           </legend>
+                           <div class="row">
+                           <div class="col-xs-6 col-md-6">
+                           <input type="text" name="firstname" value="" class="form-control input-lg" placeholder="First Name"  />                                            </div>
+                        <div class="col-xs-6 col-md-6">
+                            <input type="text" name="lastname" value="" class="form-control input-lg" placeholder="Last Name"  />                                       </div>
+                    </div>
+                    <input type="text" name="email" value="" class="form-control input-lg" placeholder="Your Email"  />
+                    <input type="password" name="password" value="" class="form-control input-lg" placeholder="Password"  />
+                    <input type="password" name="confirm_password" value="" class="form-control input-lg" placeholder="Confirm Password"/>
+                    <br>
+
+                     <label>Gender : </label>
+                    <label class="radio-inline">
+                    <input type="radio" name="gender" value="M" id=male />Male</label>
+                    <label class="radio-inline">
+                    <input type="radio" name="gender" value="F" id=female /> Female</label>
+                    <br/><br/>
+
+                    <button class="btn btn-lg btn-primary btn-block signup-btn" type="submit">Create my account</button>
+                </form>
+                </div>
+                </div>
+                </div>
+
+        </div>
+    </div>
+  </div>
+ </div>
+        </div></div>
+        <div id="footer" class="row">
+        <div class="col-md-12"></div>
+        </div>
+     </div>
+ </body>
+</html>
